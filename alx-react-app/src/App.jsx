@@ -1,13 +1,15 @@
-import React from 'react'
-import ReactionButtons from './components/ReactionButtons'
-import './App.css'
+import React, { useState } from 'react';
+import './App.css';
 
-export default function App() {
+function App() {
+  const [count, setCount] = useState(0);
+
   return (
-    <div className="app">
-      <h1>My Reaction App 💖</h1>
-      <p>Click the buttons below to react!</p>
-      <ReactionButtons />
+    <div>
+      <h1>🚨 EDIT TEST 🚨</h1>
+      <p>This confirms your edits are showing!</p>
     </div>
-  )
+  );
 }
+
+export default App;
