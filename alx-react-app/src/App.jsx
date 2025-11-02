@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
-import './App.css';
+import { useState } from 'react'
+import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <h1>🚨 EDIT TEST 🚨</h1>
-      <p>This confirms your edits are showing!</p>
-    </div>
-  );
+    <>
+      <div className="card">
+        <h1>Hello ALX React App 🚀</h1>
+        <p>This is my first React project using Vite!</p>
+        <button onClick={() => setCount((count) => count + 1)}>
+          Count is {count}
+        </button>
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
