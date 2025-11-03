@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 
-function App () {
-  const [count, seCount] = useState(0);
+function App() {
+  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -16,5 +16,3 @@ function App () {
     </>
   )
 }
-
-Export default App;
