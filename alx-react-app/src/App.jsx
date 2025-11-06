@@ -1,18 +1,13 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+import WelcomeMessage from './components/WelcomeMessage';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+Function App () {
   return (
-    <>
-      <div className="card">
-        <h1>Hello ALX React App 🚀</h1>
-        <p>This is my first React project using Vite!</p>
-        <button onClick={() => setCount((count) => count + 1)}>
-          Count is {count}
-        </button>
-      </div>
-    </>
-  )
+    <div>
+      <WelcomeMessage />
+    </div>
+  );
 }
+
+export default App;
