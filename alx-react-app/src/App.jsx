@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import WelcomeMessage from './components/WelcomeMessage';
 
-Function App () {
+function App () {
   return (
     <div>
       <WelcomeMessage />
