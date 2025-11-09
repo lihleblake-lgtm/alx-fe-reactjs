@@ -29,8 +29,6 @@ function Footer() {
     </footer>
   );
 }
-export default Footer;
-App.jsx
 
 import { Link } from "react-router-dom";
 function Navbar() {
