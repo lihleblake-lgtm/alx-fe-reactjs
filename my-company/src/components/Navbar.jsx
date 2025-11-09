@@ -1,93 +1,24 @@
 import { Link } from "react-router-dom";
+import "./Navbar.css"; // optional – only if you have a CSS file for styling
 function Navbar() {
   return (
-    <nav style={{
-      backgroundColor: '#004466',
-      padding: '10px',
-      textAlign: 'center'
-    }}>
-      <Link to="/" style={{ color: 'white', margin: '0 15px', textDecoration: 'none' }}>Home</Link>
-      <Link to="/about" style={{ color: 'white', margin: '0 15px', textDecoration: 'none' }}>About</Link>
-      <Link to="/services" style={{ color: 'white', margin: '0 15px', textDecoration: 'none' }}>Services</Link>
-      <Link to="/contact" style={{ color: 'white', margin: '0 15px', textDecoration: 'none' }}>Contact</Link>
+    <nav className="navbar">
+      <h2 className="logo">My Company</h2>
+      <ul className="nav-links">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/services">Services</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
     </nav>
   );
 }
-export default Navbar;
- Footer.jsx
-
-function Footer() {
-  return (
-    <footer style={{
-      backgroundColor: '#004466',
-      color: 'white',
-      textAlign: 'center',
-      padding: '10px',
-      marginTop: '20px'
-    }}>
-      <p>© 2025 My Company. All rights reserved.</p>
-    </footer>
-  );
-}
-
-import { Link } from "react-router-dom";
-function Navbar() {
-  return (
-    <nav
-      style={{
-        backgroundColor: "#004466",
-        padding: "10px",
-        textAlign: "center",
-        display: "flex",
-        justifyContent: "center",
-      }}
-    >
-      <Link
-        to="/"
-        style={{
-          color: "white",
-          margin: "0 15px",
-          textDecoration: "none",
-          fontWeight: "bold",
-        }}
-      >
-        Home
-      </Link>
-      <Link
-        to="/about"
-        style={{
-          color: "white",
-          margin: "0 15px",
-          textDecoration: "none",
-          fontWeight: "bold",
-        }}
-      >
-        About
-      </Link>
-      <Link
-        to="/services"
-        style={{
-          color: "white",
-          margin: "0 15px",
-          textDecoration: "none",
-          fontWeight: "bold",
-        }}
-      >
-        Services
-      </Link>
-      <Link
-        to="/contact"
-        style={{
-          color: "white",
-          margin: "0 15px",
-          textDecoration: "none",
-          fontWeight: "bold",
-        }}
-      >
-        Contact
-      </Link>
-    </nav>
-  );
-}
-
 export default Navbar;
