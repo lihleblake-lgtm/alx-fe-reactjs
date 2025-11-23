@@ -39,7 +39,7 @@ const SearchBar = () => {
       {/* Error state */}
       {error && (
         <p style={{ marginTop: "20px", color: "red" }}>
-          Looks like we can’t find the user
+          Looks like we cant find the user
         </p>
       )}
       {/* Success state */}
