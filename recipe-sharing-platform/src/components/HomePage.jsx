@@ -23,17 +23,22 @@ function HomePage() {
             gap-6">
 
                 {recipes.map(() => (
-                    <div
-                    key={recipes.id}
-                    className="
-                    bg-white
-                    rounded-lg
-                    shadow-md
-                    overflow-hidden
-                    transition
-                    transform
-                    hover:scale-105
-                    hover:shadow-lg">
+                    <Link
+                     to={`/recipe/${recipe.id}`}
+                     key={recipe.id}
+                     className="block"
+                    > 
+                     <div
+                         key={recipes.id}
+                         className="
+                         bg-white
+                         rounded-lg
+                         shadow-md
+                         overflow-hidden
+                         transition
+                         transform
+                         hover:scale-105
+                         hover:shadow-lg">
 
                         <img 
                         src={recipes.image}
