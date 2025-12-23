@@ -27,7 +27,7 @@ function HomePage() {
                      to={`/recipe/${recipe.id}`}
                      key={recipe.id}
                      className="block"
-                    > 
+                    >  
                      <div
                          key={recipes.id}
                          className="
