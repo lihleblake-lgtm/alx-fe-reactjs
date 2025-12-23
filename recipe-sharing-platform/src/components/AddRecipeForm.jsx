@@ -8,7 +8,9 @@ function AddRecipeForm() {
   const validate = () => {
     const newErrors = {};
   }
-  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
     if (!title || !ingredients || !steps) {
       setError("All fields are required.");
       return;
